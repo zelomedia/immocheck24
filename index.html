@@ -1,0 +1,650 @@
+﻿<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImmoCheck24 | Kostenloses Immobiliengutachten durch zertifizierte Sachverständige</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Partner Link Configuration -->
+    <script>
+        const AFFILIATE_URL = "https://t.adcell.com/p/click?encodingId=9ff661deedc0e7f7060c4a9932f4127c";
+        
+        function navigateToPartner() {
+            window.open(AFFILIATE_URL, '_blank', 'noopener,noreferrer');
+        }
+    </script>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo / Brand (Neu: Ohne Icon, Immo schwarz, Check24 blau) -->
+            <div class="flex items-center cursor-pointer group" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <span class="text-2xl font-black tracking-tight text-slate-950 transition-colors duration-200">
+                    Immo<span class="text-blue-600 group-hover:text-blue-700 transition-colors duration-200">Check24</span>
+                </span>
+            </div>
+
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#vorteile" class="hover:text-blue-600 transition-colors">Vorteile</a>
+                <a href="#anwendungsbereiche" class="hover:text-blue-600 transition-colors">Wann sinnvoll?</a>
+                <a href="#so-funktionierts" class="hover:text-blue-600 transition-colors font-semibold">Ablauf der Vermittlung</a>
+                <a href="#faq" class="hover:text-blue-600 transition-colors">Häufige Fragen</a>
+            </nav>
+
+            <!-- CTA Header Button -->
+            <div>
+                <button onclick="navigateToPartner()" class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-semibold rounded-xl text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 transition-all shadow-md shadow-blue-100">
+                    Experten anfordern
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Valuation Wizard Section -->
+    <main class="flex-grow">
+        <section class="relative bg-gradient-to-b from-blue-50/70 via-white to-slate-50 pt-12 pb-20 overflow-hidden">
+            <!-- Subtle background accent circles -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[350px] bg-blue-100/40 rounded-full blur-3xl -z-10"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Column: Copy & Value Proposition -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 text-xs font-semibold tracking-wide uppercase px-3 py-1.5 rounded-full">
+                            <span class="flex h-2 w-2 relative">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                            </span>
+                            <span>Bundesweite Experten-Vermittlung</span>
+                        </div>
+                        
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                            Echte Wertermittlung statt ungenauer Online-Schätzung
+                        </h1>
+                        <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Schluss mit fehlerhaften Algorithmen. Jede Immobilie ist einzigartig. Über uns stellen Sie in nur 2 Minuten Ihre Anfrage und werden kostenfrei an zertifizierte Sachverständige in Ihrer Region vermittelt. Diese erstellen ein fundiertes, professionelles Gutachten für Ihr Haus, Ihre Wohnung, Ihr Grundstück oder Ihre Gewerbeimmobilie – absolut unverbindlich und kostenfrei.
+                        </p>
+
+                        <!-- Highlight Checkmarks -->
+                        <div class="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 text-left max-w-lg mx-auto lg:mx-0">
+                            <div class="flex items-center space-x-3 text-slate-700">
+                                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-sm font-semibold">Echte Sachverständige vor Ort</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-slate-700">
+                                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-sm font-semibold">Keine teuren Gutachterkosten (Sie sparen bis zu 1.500 €)</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-slate-700">
+                                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-sm font-semibold">Sicheres Fundament für Ihren Verkauf</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-slate-700">
+                                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                <span class="text-sm font-semibold">100% unverbindlicher Service</span>
+                            </div>
+                        </div>
+
+                        <!-- Trust Seal Preview -->
+                        <div class="pt-6 flex flex-wrap items-center justify-center lg:justify-start gap-6 border-t border-slate-100">
+                            <div>
+                                <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Qualitätsgesichertes Sachverständigen-Netzwerk</p>
+                                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 mt-3 opacity-70 grayscale">
+                                    <span class="font-extrabold text-slate-700 tracking-tight text-sm">Finanzblatt</span>
+                                    <span class="font-extrabold text-slate-700 tracking-tight text-sm">N24 / WELT</span>
+                                    <span class="font-bold text-slate-700 tracking-tight text-sm">ImmoTrends 2026</span>
+                                    <span class="font-bold text-slate-700 tracking-tight text-sm">Eigentümer-Schutzbund</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Interactive Multi-Step Form Simulator -->
+                    <div class="lg:col-span-5">
+                        <div class="bg-white rounded-3xl shadow-2xl shadow-slate-200/80 border border-slate-100 p-6 sm:p-8 relative">
+                            
+                            <!-- Progress Bar -->
+                            <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden mb-8">
+                                <div id="wizard-progress" class="bg-blue-600 h-full w-1/3 transition-all duration-300 ease-out"></div>
+                            </div>
+
+                            <!-- Step Title Indicator -->
+                            <div class="flex justify-between items-center mb-6 text-xs text-slate-400 font-bold uppercase tracking-wider">
+                                <span id="wizard-step-indicator">Schritt 1 von 3</span>
+                                <span>Anfrage stellen</span>
+                            </div>
+
+                            <!-- STEP 1: Property Type Selection -->
+                            <div id="step-1" class="space-y-4">
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">Um welche Immobilienart handelt es sich?</h3>
+                                
+                                <div class="grid grid-cols-2 gap-4">
+                                    <!-- House Card -->
+                                    <button onclick="selectPropertyType('Haus')" class="group relative flex flex-col items-center justify-end h-32 rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
+                                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400&q=70" alt="Einfamilienhaus" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
+                                        <span class="relative z-10 font-bold text-white text-sm pb-4">Haus / Villa</span>
+                                    </button>
+
+                                    <!-- Apartment Card -->
+                                    <button onclick="selectPropertyType('Wohnung')" class="group relative flex flex-col items-center justify-end h-32 rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
+                                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=400&q=70" alt="Eigentumswohnung" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
+                                        <span class="relative z-10 font-bold text-white text-sm pb-4">Wohnung</span>
+                                    </button>
+
+                                    <!-- Land Card -->
+                                    <button onclick="selectPropertyType('Grundstück')" class="group relative flex flex-col items-center justify-end h-32 rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
+                                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=400&q=70" alt="Baugrundstück" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
+                                        <span class="relative z-10 font-bold text-white text-sm pb-4">Grundstück</span>
+                                    </button>
+
+                                    <!-- Commercial Card -->
+                                    <button onclick="selectPropertyType('Gewerbeimmobilie')" class="group relative flex flex-col items-center justify-end h-32 rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
+                                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400&q=70" alt="Gewerbeimmobilie" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
+                                        <span class="relative z-10 font-bold text-white text-sm pb-4">Gewerbe</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- STEP 2: Details & Zip Code -->
+                            <div id="step-2" class="hidden space-y-5">
+                                <h3 class="text-xl font-bold text-slate-900">Eckdaten der Immobilie</h3>
+                                
+                                <div>
+                                    <label for="plz" class="block text-sm font-semibold text-slate-700 mb-2">Postleitzahl der Immobilie</label>
+                                    <input type="text" id="plz" placeholder="z.B. 10115" class="w-full px-4 py-3 border border-slate-200 rounded-xl text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                                </div>
+
+                                <div>
+                                    <label for="living-space" class="block text-sm font-semibold text-slate-700 mb-2">Wohn-/Nutzfläche bzw. Grundstücksgröße (m²)</label>
+                                    <input type="number" id="living-space" placeholder="z.B. 120" class="w-full px-4 py-3 border border-slate-200 rounded-xl text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                                </div>
+
+                                <div class="flex space-x-3 pt-2">
+                                    <button onclick="prevStep()" class="w-1/3 py-3 px-4 border border-slate-200 text-slate-600 font-semibold rounded-xl hover:bg-slate-50 active:bg-slate-100 transition-all text-sm">
+                                        Zurück
+                                    </button>
+                                    <button onclick="validateStep2()" class="w-2/3 py-3 px-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all shadow-md shadow-blue-100 text-sm">
+                                        Weiter
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- STEP 3: Dynamic Calculation and Redirect Offer -->
+                            <div id="step-3" class="hidden space-y-6">
+                                <div class="text-center py-4">
+                                    <div class="inline-flex items-center justify-center p-4 bg-emerald-50 text-emerald-600 rounded-full mb-4">
+                                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    </div>
+                                    <h3 class="text-2xl font-black text-slate-900">Anfrage bereit!</h3>
+                                    <p class="text-sm text-slate-500 mt-2">Wir haben Ihre Angaben erfasst und leiten Sie zur finalen Vermittlung an unseren Gutachter-Partner weiter.</p>
+                                </div>
+
+                                <!-- Dynamic Overview Panel -->
+                                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-4 space-y-3">
+                                    <div class="flex justify-between text-sm text-slate-600">
+                                        <span>Immobilientyp:</span>
+                                        <span id="summary-type" class="font-bold text-slate-900">-</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm text-slate-600">
+                                        <span>Ort / PLZ:</span>
+                                        <span id="summary-plz" class="font-bold text-slate-900">-</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm text-slate-600">
+                                        <span>Größe:</span>
+                                        <span id="summary-space" class="font-bold text-slate-900">- m²</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm text-slate-600 pt-2 border-t border-slate-200">
+                                        <span>Sachverständigen-Zuteilung:</span>
+                                        <span class="font-bold text-emerald-600 uppercase">Kostenlos (0,00 €)</span>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-3">
+                                    <!-- High-impact Conversion Button utilizing direct affiliate link with partner-friendly phrasing -->
+                                    <a href="https://t.adcell.com/p/click?encodingId=9ff661deedc0e7f7060c4a9932f4127c" target="_blank" onclick="trackLead()" class="block w-full py-4 px-6 text-center text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 font-bold rounded-2xl transition-all shadow-lg shadow-blue-200 text-base transform hover:scale-[1.02] duration-150">
+                                        Jetzt kostenfreies Gutachten anfordern
+                                    </a>
+                                    
+                                    <p class="text-[11px] text-center text-slate-400">
+                                        Mit Klick auf diesen Button werden Sie sicher zu unserem zertifizierten Partner-Vermittlungsportal weitergeleitet, um Ihren persönlichen Gutachter zuzuweisen.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Verification / So funktioniert's -->
+        <section id="so-funktionierts" class="py-20 bg-white border-t border-b border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">In 3 einfachen Schritten zu Ihrem fundierten Wertgutachten</h2>
+                    <p class="text-lg text-slate-600">Ehrlich, transparent und fachlich präzise – so läuft die kostenfreie Vermittlung über ImmoCheck24 ab:</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16 relative">
+                    <!-- Step 1 -->
+                    <div class="text-center space-y-4 relative z-10">
+                        <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center font-black text-2xl mx-auto shadow-sm">
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">1. Online-Anfrage stellen</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed px-4">
+                            Sie wählen oben Ihren Immobilientyp aus und tragen Postleitzahl und Größe ein. Dieser Prozess dauert weniger als 2 Minuten.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="text-center space-y-4 relative z-10">
+                        <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center font-black text-2xl mx-auto shadow-sm">
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">2. Vermittlung an Sachverständige</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed px-4">
+                            Wir filtern unser bundesweites Netzwerk nach dem für Ihre Postleitzahl und Ihre Objektart am besten qualifizierten, zertifizierten Gutachter.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center space-y-4 relative z-10">
+                        <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center font-black text-2xl mx-auto shadow-sm">
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">3. Erstellung des Gutachtens</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed px-4">
+                            Der Experte nimmt Kontakt zu Ihnen auf, prüft alle wertbestimmenden Faktoren (Makro-/Mikrolage, Zustand, Bodenrichtwert) und erstellt Ihr professionelles Wertgutachten – vollkommen kostenfrei.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Benefits / Why evaluate? -->
+        <section id="vorteile" class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Warum ein echtes Gutachten unschlagbar ist</h2>
+                    <p class="text-lg text-slate-600">Reine Online-Rechner greifen oft auf veraltete Datenbanken zurück und ignorieren wertsteigernde oder wertmindernde Details vor Ort.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                    <!-- Advantage 1 -->
+                    <div class="bg-white rounded-3xl p-8 border border-slate-100 hover:shadow-lg transition-all duration-300">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Rechtssichere Preisfindung</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">Ganz gleich, ob Haus, Eigentumswohnung, Grundstück oder Gewerbeobjekt: Nur ein qualifizierter Sachverständiger liefert Ihnen Zahlen, auf die Sie sich bei Verkäufen, Bankgesprächen oder Erbteilungen rechtssicher stützen können.</p>
+                    </div>
+
+                    <!-- Advantage 2 -->
+                    <div class="bg-white rounded-3xl p-8 border border-slate-100 hover:shadow-lg transition-all duration-300">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Berücksichtigung von Ausbauten &amp; Sanierung</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">Haben Sie eine neue Wärmepumpe installiert oder das Dach saniert? Ein Online-Algorithmus ignoriert das meist völlig – ein regionaler Sachverständiger berücksichtigt jede wertsteigernde Modernisierung.</p>
+                    </div>
+
+                    <!-- Advantage 3 -->
+                    <div class="bg-white rounded-3xl p-8 border border-slate-100 hover:shadow-lg transition-all duration-300">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Komplett kostenfrei &amp; unverbindlich</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">Sie gehen keinerlei Verkaufsverpflichtung ein. Die Wertermittlung durch die vermittelten Experten wird im Rahmen einer kostenfreien Erstberatung zur Marktwertanalyse durchgeführt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section: Target Use Cases / Wann ist eine Wertermittlung sinnvoll? -->
+        <section id="anwendungsbereiche" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Der perfekte Ausgangspunkt für jede Lebenslage</h2>
+                    <p class="text-lg text-slate-600">Eine fachgerechte Immobilienbewertung schafft Klarheit in entscheidenden Lebensmomenten.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 items-center">
+                    <div>
+                        <!-- High Quality Stock Photo of a Modern Villa -->
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Exklusive moderne Villa" class="rounded-3xl shadow-xl border border-slate-200/80 w-full object-cover h-[450px]" />
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm flex items-start space-x-4">
+                            <div class="bg-blue-50 p-3 rounded-xl text-blue-600 mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900">Geplanter Verkauf &amp; Markttest</h4>
+                                <p class="text-sm text-slate-500 mt-1">Sichern Sie sich den maximalen Verkaufspreis. Setzen Sie den Preis weder zu niedrig an (Geldverlust) noch unrealistisch hoch (Objekt verbrennt am Markt).</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm flex items-start space-x-4">
+                            <div class="bg-blue-50 p-3 rounded-xl text-blue-600 mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900">Erbschaft &amp; Nachlassregelung</h4>
+                                <p class="text-sm text-slate-500 mt-1">Sorgen Sie für faire, transparente Verhältnisse innerhalb der Familie. Ein neutrales Sachverständigengutachten schützt vor Erbstreitigkeiten.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm flex items-start space-x-4">
+                            <div class="bg-blue-50 p-3 rounded-xl text-blue-600 mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-slate-900">Eheauseinandersetzungen / Scheidung</h4>
+                                <p class="text-sm text-slate-500 mt-1">Bei Vermögensauseinandersetzungen schützt Sie eine unabhängige Markteinschätzung vor falschen Schätzwerten und sichert Ihre legitimen Rechte ab.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User reviews -->
+        <section id="bewertungen" class="py-20 bg-slate-50 border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Das sagen andere Immobilienbesitzer</h2>
+                    <p class="text-lg text-slate-600">Erfolgreich bewertet und abgesichert durch das ImmoCheck24 Partner-Netzwerk.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-100 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex items-center space-x-1 mb-4 text-amber-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">"Ich war skeptisch bezüglich dieser automatischen Online-Rechner. Gott sei Dank habe ich über ImmoCheck24 einen qualifizierten Sachverständigen für mein Grundstück in Hamburg vermittelt bekommen. Das kostenfreie Gutachten war hochprofessionell!"</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100">
+                            <span class="block font-bold text-slate-900 text-sm">Stefan M.</span>
+                            <span class="text-xs text-slate-400">Besitzer eines Grundstücks in Hamburg</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-100 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex items-center space-x-1 mb-4 text-amber-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">"Wir wollten unsere Wohnung verkaufen und brauchten ein realistisches Fundament. Der zugeteilte Gutachter kam nach Absprache zu uns, hat alles fachmännisch erfasst und uns eine hervorragende Auswertung überlassen. Absolut empfehlenswert."</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100">
+                            <span class="block font-bold text-slate-900 text-sm">Brigitte K.</span>
+                            <span class="text-xs text-slate-400">Wohnungseigentümerin aus München</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-100 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex items-center space-x-1 mb-4 text-amber-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                            <p class="text-slate-600 italic text-sm leading-relaxed">"Für unsere Gewerbeimmobilie in Berlin brauchte ich kurzfristig eine verlässliche Wertermittlung zur Bilanzprüfung. Über das Portal wurden wir perfekt betreut. Schneller, unkomplizierter und transparenter Kontakt."</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-slate-100">
+                            <span class="block font-bold text-slate-900 text-sm">Gerhard T.</span>
+                            <span class="text-xs text-slate-400">Gewerbe-Eigentümer aus Berlin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section id="faq" class="py-20 bg-white border-t border-slate-100">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <div class="text-center space-y-4 mb-16">
+                    <h2 class="text-3xl font-extrabold text-slate-900">Häufig gestellte Fragen (FAQ)</h2>
+                    <p class="text-lg text-slate-600">Erfahren Sie, wie unser kostenfreies Vermittlungsmodell funktioniert.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-slate-50 border border-slate-200/60 rounded-2xl overflow-hidden transition-all duration-300">
+                        <button onclick="toggleFaq(1)" class="w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none">
+                            <span class="font-bold text-slate-800 text-base md:text-lg">Wie kann die Immobilienbewertung komplett kostenlos sein?</span>
+                            <svg id="faq-icon-1" class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div id="faq-ans-1" class="hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/50 pt-3">
+                            Unsere Sachverständigen und Immobilienpartner bieten diese professionelle Wertermittlung als kostenfreie Erstberatung an. Sie hoffen natürlich darauf, Sie durch Kompetenz zu überzeugen, falls Sie sich später für einen Verkauf entscheiden. Es besteht für Sie jedoch zu keinem Zeitpunkt eine Verpflichtung oder Kostenpflicht.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="bg-slate-50 border border-slate-200/60 rounded-2xl overflow-hidden transition-all duration-300">
+                        <button onclick="toggleFaq(2)" class="w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none">
+                            <span class="font-bold text-slate-800 text-base md:text-lg">Bekomme ich das Ergebnis wirklich nicht in 2 Minuten online?</span>
+                            <svg id="faq-icon-2" class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div id="faq-ans-2" class="hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/50 pt-3">
+                            Richtig. In 2 Minuten erfassen Sie Ihre Anfrage bei uns. Ein seriöser und präziser Marktwert lässt sich unmöglich in Sekunden am Bildschirm berechnen. Jedes Grundstück, jedes Haus und jede Gewerbeimmobilie erfordert eine individuelle Prüfung durch Fachpersonal, um den tatsächlichen Wert auf dem aktuellen Markt sicherzustellen.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-slate-50 border border-slate-200/60 rounded-2xl overflow-hidden transition-all duration-300">
+                        <button onclick="toggleFaq(3)" class="w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none">
+                            <span class="font-bold text-slate-800 text-base md:text-lg">Für welche Regionen in Deutschland gilt dieses Angebot?</span>
+                            <svg id="faq-icon-3" class="w-5 h-5 text-slate-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div id="faq-ans-3" class="hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-200/50 pt-3">
+                            Unser qualifiziertes Partner-Netzwerk erstreckt sich über das gesamte Bundesgebiet. Egal ob Großstadt, ländliche Regionen, Einfamilienhaus oder komplexe Gewerbeimmobilie – wir vermitteln Sie direkt an Experten in Ihrer unmittelbaren Nähe.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner to drive urgency before footer -->
+        <section class="bg-blue-600 py-16 text-white text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-700 to-indigo-700 opacity-95"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6">
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Erhalten Sie das Fundament für Ihre finanzielle Entscheidung</h2>
+                <p class="text-blue-100 max-w-2xl mx-auto mb-8 text-base sm:text-lg">Sparen Sie sich teure Honorare. Starten Sie jetzt Ihre 2-Minuten-Anfrage und lassen Sie Ihre Immobilie unverbindlich von echten Experten bewerten.</p>
+                <button onclick="navigateToPartner()" class="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 hover:bg-slate-50 font-bold rounded-2xl shadow-xl transition-all transform hover:scale-105 duration-150">
+                    Jetzt kostenloses Gutachten anfordern
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section with Affiliate Tracking Pixel -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 border-b border-slate-800 pb-8">
+                <!-- Branding column -->
+                <div class="space-y-3">
+                    <span class="text-xl font-extrabold text-white">ImmoCheck24 Deutschland</span>
+                    <p class="text-xs text-slate-500 max-w-xs leading-relaxed">
+                        Ihre moderne Anlaufstelle für datenbasierte Orientierungswerte und professionelle Wertermittlungen für Immobilien aller Art im gesamten Bundesgebiet.
+                    </p>
+                </div>
+                <!-- Disclaimers / Notice -->
+                <div class="space-y-2">
+                    <span class="text-sm font-semibold text-white block">Hinweis zum Partner-Angebot</span>
+                    <p class="text-[11px] text-slate-500 leading-relaxed">
+                        Diese Webseite stellt ein unabhängiges Informationsangebot bereit. Wir vermitteln Sie für die tatsächliche Immobilienbewertung an unseren geprüften Partner über ein Affiliate-Netzwerk. Bei einer erfolgreichen Vermittlung erhalten wir unter Umständen eine Vergütung.
+                    </p>
+                </div>
+                <!-- Links -->
+                <div class="space-y-2 md:text-right">
+                    <span class="text-sm font-semibold text-white block">Rechtliches &amp; Kontakt</span>
+                    <div class="flex flex-col md:items-end space-y-1 text-xs">
+                        <a href="#" class="hover:text-white transition-colors">Impressum</a>
+                        <a href="#" class="hover:text-white transition-colors">Datenschutzbestimmungen</a>
+                        <a href="#" class="hover:text-white transition-colors">Nutzungsbedingungen</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright and Adcell view tracking pixel integration -->
+            <div class="flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+                <span>&copy; 2026 ImmoCheck24. Alle Rechte vorbehalten.</span>
+                <span class="mt-2 sm:mt-0">Verschlüsselte &amp; sichere Datenübertragung</span>
+            </div>
+        </div>
+
+        <!-- Adcell View-Tracking-Pixel (Invisible to prevent layout shift) -->
+        <img src="https://t.adcell.com/p/view?encodingId=9ff661deedc0e7f7060c4a9932f4127c" border="0" width="1" height="1" alt="Adcell Tracking" class="absolute bottom-0 left-0 opacity-0 pointer-events-none" />
+    </footer>
+
+    <script>
+        // Multi-Step Wizard State Management
+        let currentStep = 1;
+        const state = {
+            propertyType: "",
+            zipCode: "",
+            area: ""
+        };
+
+        const step1 = document.getElementById("step-1");
+        const step2 = document.getElementById("step-2");
+        const step3 = document.getElementById("step-3");
+        const progress = document.getElementById("wizard-progress");
+        const stepIndicator = document.getElementById("wizard-step-indicator");
+
+        // Step 1: Property Type Selection
+        function selectPropertyType(type) {
+            state.propertyType = type;
+            nextStep();
+        }
+
+        // Handle logical progression
+        function nextStep() {
+            if (currentStep === 1) {
+                step1.classList.add("hidden");
+                step2.classList.remove("hidden");
+                currentStep = 2;
+                progress.style.width = "66%";
+                stepIndicator.innerText = "Schritt 2 von 3";
+            } else if (currentStep === 2) {
+                step2.classList.add("hidden");
+                step3.classList.remove("hidden");
+                currentStep = 3;
+                progress.style.width = "100%";
+                stepIndicator.innerText = "Schritt 3 von 3";
+                
+                // Populate the state overview
+                document.getElementById("summary-type").innerText = state.propertyType;
+                document.getElementById("summary-plz").innerText = state.zipCode;
+                document.getElementById("summary-space").innerText = state.area + " m²";
+            }
+        }
+
+        // Go back a step
+        function prevStep() {
+            if (currentStep === 2) {
+                step2.classList.add("hidden");
+                step1.classList.remove("hidden");
+                currentStep = 1;
+                progress.style.width = "33%";
+                stepIndicator.innerText = "Schritt 1 von 3";
+            }
+        }
+
+        // Validate Step 2 inputs before advancing
+        function validateStep2() {
+            const plzVal = document.getElementById("plz").value.trim();
+            const spaceVal = document.getElementById("living-space").value.trim();
+
+            if (!plzVal || plzVal.length < 4 || isNaN(plzVal)) {
+                alertUser("Bitte geben Sie eine gültige deutsche Postleitzahl ein.");
+                return;
+            }
+
+            if (!spaceVal || spaceVal <= 0 || isNaN(spaceVal)) {
+                alertUser("Bitte geben Sie eine realistische m²-Angabe ein.");
+                return;
+            }
+
+            state.zipCode = plzVal;
+            state.area = spaceVal;
+            nextStep();
+        }
+
+        // Custom unobtrusive modal warning alternative to alert()
+        function alertUser(message) {
+            const modal = document.createElement("div");
+            modal.className = "fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-all duration-300";
+            modal.innerHTML = `
+                <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-xl border border-slate-100 transform scale-95 transition-transform duration-300">
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-amber-50 text-amber-500 mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900">Eingabe prüfen</h4>
+                        <p class="text-sm text-slate-500 mt-2">${message}</p>
+                        <button onclick="this.closest('.fixed').remove()" class="w-full mt-5 py-2.5 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold rounded-xl text-sm transition-all shadow-md shadow-blue-100">
+                            Verstanden
+                        </button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        // Accordion functionality for the FAQs
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (ans.classList.contains("hidden")) {
+                ans.classList.remove("hidden");
+                icon.classList.add("rotate-180");
+            } else {
+                ans.classList.add("hidden");
+                icon.classList.remove("rotate-180");
+            }
+        }
+
+        // Mock event tracker log (purely for client experience/future hooks)
+        function trackLead() {
+            console.log("Valuation Request Sent: Transferring to partner network", state);
+        }
+    </script>
+</body>
+</html>
